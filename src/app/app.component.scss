@@ -1,0 +1,164 @@
+.menu
+{
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 64px;
+    left: 20px;
+    overflow: hidden;
+
+    a
+    {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 60px;
+        text-decoration: none;
+        display: block;
+    }
+
+    a.icon-main
+    {
+        font-family: 'Montserrat';
+        font-size: 96px;
+        color: #38B6FF;
+        font-weight: bold;
+        margin-bottom: 12px;
+        text-align: center;
+        height: 120px;
+    }
+    a.icon-skills
+    {
+        background-image: url(../assets/imgs/insert_chart.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 30%;
+    }
+    a.icon-projects
+    {
+        background-image: url(../assets/imgs/code.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 30%;
+    }
+    a.icon-contact
+    {
+        background-image: url(../assets/imgs/mail.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 30%;
+    }
+
+    .divider
+    {
+        height: 1px;
+        border-top: 1px solid #FFFFFF;
+        margin: 0px 36px;
+    }
+
+    a.icon-linkedin
+    {
+        background-image: url(../assets/imgs/linkedin.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 30%;
+        height: 28px;
+        margin: 12px 0px;
+    }
+    a.icon-github
+    {
+        background-image: url(../assets/imgs/github.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 30%;
+        height: 28px;
+        margin: 12px 0px;
+    }
+    a.icon-instagram
+    {
+        background-image: url(../assets/imgs/youtube.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 30%;
+        height: 28px;
+        margin: 12px 0px;
+    }
+}
+
+.main
+{
+    background-image: url("../assets/imgs/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.content
+{
+    padding-left: 200px;
+    display: flex;
+
+    h1
+{
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 68px;
+    color: #FFFFFF;
+
+    span
+    {
+        color: #38B6FF;
+    }
+
+    padding-top: 160px;
+    padding-bottom: 116px;
+}
+
+.btn-contact
+{
+    width: 220px;
+    height: 60px;
+    background-color: rgba(#38b6ff, 0.2);
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 1px solid #38b6ff;
+    cursor: pointer;
+}
+
+.img
+{
+    margin-left: -20px;
+    margin-top: 100px;
+    width: 450px;
+    height: 500px;
+    background-color: #0B2636;
+    background-image: url("../assets/imgs/perfil-img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: -180p;
+    border-radius: 70% 50% 70% 45% / 70% 65% 55% 45%;
+}
+
+}
+
+.skills
+{
+    margin: 0px 200px;
+    padding-bottom: 120px;
+    border-bottom: 1px solid rgba(#FFFFFF, 0.3);
+}
+
+button, input[type="submit"], input[type="text"], textarea
+{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
