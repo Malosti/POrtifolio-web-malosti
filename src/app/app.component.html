@@ -53,11 +53,11 @@
   <h1>Entrar em <br> contato</h1>
   <div class="form">
     <div class="row">
-      <input class="input" type="text" placeholder="Nome">
-      <input class="input" type="text" placeholder="Email">
+      <input class="input" type="text" placeholder="Nome" [(ngModel)]="name">
+      <input class="input" type="text" placeholder="Email"[(ngModel)]="email">
     </div>
-    <input class="input" type="text" placeholder="Assunto">
-    <textarea class="textarea" placeholder="Mensagem"></textarea>
-    <button class="submit" type="submit">Enviar</button>
+    <input class="input" type="text" placeholder="Assunto"[(ngModel)]="subject">
+    <textarea class="textarea" placeholder="Mensagem"[(ngModel)]="message"></textarea>
+    <button class="submit" type="submit" (click)="sendMessage()">Enviar</button>
   </div>
 </section>

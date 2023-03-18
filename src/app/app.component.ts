@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContactsService } from './services/contacts.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'portifolio-web-malosti';
+  name!: string;
+  email!: string;
+  subject!: string;
+  message!: string;
+
+  constructor(private contactService: ContactsService){}
+
+  sendMessage()
+  {
+    this.contactService.addContact ({
+      Name: this.name,
+      Email: this.email,
+      Subject: this.subject,
+      Message: this.message
+    }).subscribe(() => {
+      this.name = ''
+      this.email = ''
+      this.subject = ''
+      this.message = ''
+    })
+      
+  }
 }
